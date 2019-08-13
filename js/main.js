@@ -23,11 +23,11 @@ var balls = [
   
 ]; 
 var clickBalls = [ 
-  {active:false,x:300,y:200,dx:-.707,dy:.707,color:"#666666",radius:20,bDamage:10,rank:1,cost:10,id:100,clone:false,speed:4}, 
-  {active:false,x:200,y:200,dx:-.707,dy:.707,color:"#666666",radius:20,bDamage:10,rank:1,cost:10,id:101,clone:false,speed:4}, 
-  {active:false,x:500,y:200,dx:-.707,dy:.707,color:"#666666",radius:20,bDamage:10,rank:1,cost:10,id:102,clone:false,speed:4}, 
-  {active:false,x:700,y:200,dx:-.707,dy:.707,color:"#666666",radius:20,bDamage:10,rank:1,cost:10,id:103,clone:false,speed:4}, 
-  {active:false,x:100,y:200,dx:-.707,dy:.707,color:"#666666",radius:20,bDamage:10,rank:1,cost:10,id:104,clone:false,speed:4} 
+  {active:false,x:300,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:100,clone:false,speed:4}, 
+  {active:false,x:200,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:101,clone:false,speed:4}, 
+  {active:false,x:500,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:102,clone:false,speed:4}, 
+  {active:false,x:700,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:103,clone:false,speed:4}, 
+  {active:false,x:100,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:104,clone:false,speed:4} 
 ] 
 var enemies = []; 
 var shrink = false; 
@@ -557,9 +557,9 @@ function wipeSave(){
   } 
 } 
 function prestige(){ 
-  if(level >= 400){ 
+  if(level >= 50){ 
     if(confirm("Are you sure you want to Prestige? This will get rid of all your numbers, all your levels and all your ball upgrades/clones. It will not get rid of Achievements or Prestige Upgrades. By prestiging you will get 1 Ball Point which gives you 100% more income (additive)") == true){ 
-      ballPoints += Math.pow(2,(Math.floor((level-400)/100))); 
+      ballPoints += Math.pow(2,(Math.floor((level-50)/10))); 
       prestiged++; 
       level = (5*pUpgrades[10]); 
       click.rank = 1; 
