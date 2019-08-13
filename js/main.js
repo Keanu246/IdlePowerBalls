@@ -6,7 +6,7 @@ var level = 1;
 var click = {multi: 1.07,rank: 1, bCost: 10,bDamage:10} 
 var baseCostMulti = 1.07; 
 var baseHealthMulti = 1.85; 
-var startingBalls = 11; 
+var startingBalls = 12; 
 var balls = [ 
   {active:false,x:200,y:200,dx:.707,dy:.707,color:"#5555ff",radius:10,bDamage:10,rank:0,cost:10,id:0,clone:false,speed:1}, 
   {active:false,x:300,y:300,dx:.707,dy:-.707,color:"#00ff00",radius:15,bDamage:200,rank:0,cost:200,id:1,clone:false,speed:2}, 
@@ -18,7 +18,8 @@ var balls = [
   {active:false,x:1100,y:400,dx:-.707,dy:-.707,color:"#EE33A1",radius:45,bDamage:12800000000,rank:0,cost:12800000000,id:7,clone:false,speed:8}, 
   {active:false,x:300,y:500,dx:.707,dy:-.707,color:"#2ED371",radius:50,bDamage:256000000000,rank:0,cost:256000000000,id:8,clone:false,speed:9}, 
   {active:false,x:600,y:200,dx:-.707,dy:.707,color:"#800000",radius:55,bDamage:5120000000000,rank:0,cost:5120000000000,id:9,clone:false,speed:10},
-  {active:false,x:500,y:200,dx:-.707,dy:.707,color:"#000000",radius:60,bDamage:10240000000000,rank:0,cost:10240000000000,id:10,clone:false,speed:11}
+  {active:false,x:500,y:200,dx:-.707,dy:.707,color:"#000000",radius:60,bDamage:10240000000000,rank:0,cost:10240000000000,id:10,clone:false,speed:11},
+  {active:false,x:700,y:200,dx:-.707,dy:.707,color:"#FFD700",radius:60,bDamage:204800000000000,rank:0,cost:10240000000000,id:11,clone:false,speed:12}
   
 ]; 
 var clickBalls = [ 
