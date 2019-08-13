@@ -1,4 +1,4 @@
-# Incremental Balls
+# Idle Power Balls
 A web game made by Special Games.
 
 # Progress
