@@ -18,16 +18,16 @@ var balls = [
   {active:false,x:1100,y:400,dx:-.707,dy:-.707,color:"#EE33A1",radius:45,bDamage:12800000000,rank:0,cost:12800000000,id:7,clone:false,speed:8}, 
   {active:false,x:300,y:500,dx:.707,dy:-.707,color:"#2ED371",radius:50,bDamage:256000000000,rank:0,cost:256000000000,id:8,clone:false,speed:9}, 
   {active:false,x:600,y:200,dx:-.707,dy:.707,color:"#800000",radius:55,bDamage:5120000000000,rank:0,cost:5120000000000,id:9,clone:false,speed:10},
-  {active:false,x:500,y:200,dx:-.707,dy:.707,color:"#000000",radius:60,bDamage:10240000000000,rank:0,cost:10240000000000,id:10,clone:false,speed:11},
-  {active:false,x:700,y:200,dx:-.707,dy:.707,color:"#FFD700",radius:60,bDamage:204800000000000,rank:0,cost:204800000000000,id:11,clone:false,speed:12}
+  {active:false,x:500,y:200,dx:-.707,dy:.707,color:"#000000",radius:60,bDamage:102400000000000,rank:0,cost:10240000000000,id:10,clone:false,speed:11},
+  {active:false,x:700,y:200,dx:-.707,dy:.707,color:"#FFD700",radius:60,bDamage:2048000000000000,rank:0,cost:204800000000000,id:11,clone:false,speed:12}
   
 ]; 
 var clickBalls = [ 
-  {active:false,x:300,y:200,dx:-.707,dy:.707,color:"#666666",radius:20,bDamage:10,rank:1,cost:10,id:100,clone:false,speed:4}, 
-  {active:false,x:200,y:200,dx:-.707,dy:.707,color:"#666666",radius:20,bDamage:10,rank:1,cost:10,id:101,clone:false,speed:4}, 
-  {active:false,x:500,y:200,dx:-.707,dy:.707,color:"#666666",radius:20,bDamage:10,rank:1,cost:10,id:102,clone:false,speed:4}, 
-  {active:false,x:700,y:200,dx:-.707,dy:.707,color:"#666666",radius:20,bDamage:10,rank:1,cost:10,id:103,clone:false,speed:4}, 
-  {active:false,x:100,y:200,dx:-.707,dy:.707,color:"#666666",radius:20,bDamage:10,rank:1,cost:10,id:104,clone:false,speed:4} 
+  {active:false,x:300,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:100,clone:false,speed:4}, 
+  {active:false,x:200,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:101,clone:false,speed:4}, 
+  {active:false,x:500,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:102,clone:false,speed:4}, 
+  {active:false,x:700,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:103,clone:false,speed:4}, 
+  {active:false,x:100,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:104,clone:false,speed:4} 
 ] 
 var enemies = []; 
 var shrink = false; 
@@ -557,9 +557,9 @@ function wipeSave(){
   } 
 } 
 function prestige(){ 
-  if(level >= 400){ 
+  if(level >= 50){ 
     if(confirm("Are you sure you want to Prestige? This will get rid of all your numbers, all your levels and all your ball upgrades/clones. It will not get rid of Achievements or Prestige Upgrades. By prestiging you will get 1 Ball Point which gives you 100% more income (additive)") == true){ 
-      ballPoints += Math.pow(2,(Math.floor((level-400)/100))); 
+      ballPoints += Math.pow(2,(Math.floor((level-50)/25))); 
       prestiged++; 
       level = (5*pUpgrades[10]); 
       click.rank = 1; 
