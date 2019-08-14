@@ -30,7 +30,7 @@ var clickBalls = [
   {active:false,x:100,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:104,clone:false,speed:4}
 ];
 var specialBalls = [ 
-  {active:false,x:700,y:200,dx:.707,dy:.707,color:"#e25822",radius:25,bDamage:500000000000000000000,rank:0,cost:100000000000000000000000,id:0,clone:false,speed:6}, 
+  {active:false,x:700,y:200,dx:.707,dy:.707,color:"#e25822",radius:25,bDamage:500000000000000000000,rank:0,cost:100000000000000000000,id:0,clone:false,speed:6}, 
   {active:false,x:800,y:300,dx:.707,dy:.707,color:"#FFC21B",radius:30,bDamage:3000000000000000000000000,rank:0,cost:1000000000000000000000000,id:1,clone:false,speed:7}
 ]
 var enemies = []; 
