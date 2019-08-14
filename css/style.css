@@ -4,7 +4,7 @@ body {
 
 h1 {
     color: #000000;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 p {
     color: #000000;
@@ -17,24 +17,24 @@ canvas{
 }
 .small{
     font-size: 100%;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .largeR{
     float: right;
     text-align: right;
     font-size: 160%;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .largeL{
     float: left;
     text-align: left;
     font-size: 160%;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .large{
     text-align: left;
     font-size: 160%;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .clearfix{
     clear:both
