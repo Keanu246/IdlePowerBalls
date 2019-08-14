@@ -756,10 +756,4 @@ function changeNotation(){
     notationScientfic = true; 
     document.getElementById("notation").innerHTML = "Change Notation to Standard"; 
   }
-function startGame() {
-  mySound = new sound("sound-695.m4a");
-  myMusic = new sound("sound-695.ogg");
-  myMusic.play();
-  myGameArea.start();
-}
 }
