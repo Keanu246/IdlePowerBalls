@@ -6,7 +6,7 @@ var level = 1;
 var click = {multi: 1.07,rank: 1, bCost: 10,bDamage:10} 
 var baseCostMulti = 1.07; 
 var baseHealthMulti = 1.85; 
-var startingBalls = 12; 
+var startingBalls = 14; 
 var balls = [ 
   {active:false,x:200,y:200,dx:.707,dy:.707,color:"#5555ff",radius:10,bDamage:10,rank:0,cost:10,id:0,clone:false,speed:1}, 
   {active:false,x:300,y:300,dx:.707,dy:-.707,color:"#00ff00",radius:15,bDamage:200,rank:0,cost:200,id:1,clone:false,speed:2}, 
@@ -532,7 +532,8 @@ function toggleNightMode(){
     document.getElementById("Prestige").style.border = "1px solid #000000"; 
     document.getElementById("Options").style.border = "1px solid #000000"; 
     document.getElementById("Changelog").style.border = "1px solid #000000"; 
-    document.getElementById("Leaderboard").style.border = "1px solid #000000"; 
+    document.getElementById("Leaderboard").style.border = "1px solid #000000";
+    document.getElementById("Special").style.border = "1px solid #000000"; 
   } 
   else{ 
     nightMode = true; 
@@ -551,7 +552,8 @@ function toggleNightMode(){
     document.getElementById("Prestige").style.border = "1px solid #ffffff"; 
     document.getElementById("Options").style.border = "1px solid #ffffff"; 
     document.getElementById("Changelog").style.border = "1px solid #ffffff"; 
-    document.getElementById("Leaderboard").style.border = "1px solid #ffffff"; 
+    document.getElementById("Leaderboard").style.border = "1px solid #ffffff";
+    document.getElementById("Special").style.border = "1px solid #ffffff"; 
   } 
 } 
 function wipeSave(){ 
