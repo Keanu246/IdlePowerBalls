@@ -27,8 +27,12 @@ var clickBalls = [
   {active:false,x:200,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:101,clone:false,speed:4}, 
   {active:false,x:500,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:102,clone:false,speed:4}, 
   {active:false,x:700,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:103,clone:false,speed:4}, 
-  {active:false,x:100,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:104,clone:false,speed:4} 
-] 
+  {active:false,x:100,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:104,clone:false,speed:4}
+];
+var balls = [ 
+  {active:false,x:700,y:200,dx:.707,dy:.707,color:"#e25822",radius:10,bDamage:500000000000000000000,rank:0,cost:100000000000000000000000,id:0,clone:false,speed:1}, 
+  {active:false,x:800,y:300,dx:.707,dy:.707,color:"#FFC21B",radius:15,bDamage:3000000000000000000000000,rank:0,cost:1000000000000000000000000,id:1,clone:false,speed:2}
+]
 var enemies = []; 
 var shrink = false; 
 var nightMode = false; 
