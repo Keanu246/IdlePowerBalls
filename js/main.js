@@ -8,18 +8,18 @@ var baseCostMulti = 1.07;
 var baseHealthMulti = 1.85; 
 var startingBalls = 14; 
 var balls = [ 
-  {active:false,x:200,y:200,dx:.707,dy:.707,color:"#5555ff",radius:10,bDamage:10,rank:0,cost:10,id:0,clone:false,speed:1}, 
-  {active:false,x:300,y:300,dx:.707,dy:-.707,color:"#00ff00",radius:15,bDamage:200,rank:0,cost:200,id:1,clone:false,speed:2}, 
-  {active:false,x:100,y:100,dx:-.707,dy:.707,color:"#ff0000",radius:20,bDamage:4000,rank:0,cost:4000,id:2,clone:false,speed:3}, 
-  {active:false,x:400,y:400,dx:-.707,dy:-.707,color:"#ffff00",radius:25,bDamage:80000,rank:0,cost:80000,id:3,clone:false,speed:4}, 
-  {active:false,x:900,y:300,dx:-.707,dy:.707,color:"#FFA500",radius:30,bDamage:1600000,rank:0,cost:1600000,id:4,clone:false,speed:5}, 
-  {active:false,x:1000,y:200,dx:-.707,dy:-.707,color:"#800080",radius:35,bDamage:32000000,rank:0,cost:32000000,id:5,clone:false,speed:6}, 
-  {active:false,x:1200,y:300,dx:.707,dy:.707,color:"#00C7D1",radius:40,bDamage:640000000,rank:0,cost:640000000,id:6,clone:false,speed:7}, 
-  {active:false,x:1100,y:400,dx:-.707,dy:-.707,color:"#EE33A1",radius:45,bDamage:12800000000,rank:0,cost:12800000000,id:7,clone:false,speed:8}, 
-  {active:false,x:300,y:500,dx:.707,dy:-.707,color:"#2ED371",radius:50,bDamage:256000000000,rank:0,cost:256000000000,id:8,clone:false,speed:9}, 
-  {active:false,x:600,y:200,dx:-.707,dy:.707,color:"#800000",radius:55,bDamage:5120000000000,rank:0,cost:5120000000000,id:9,clone:false,speed:10},
-  {active:false,x:500,y:200,dx:-.707,dy:.707,color:"#000000",radius:60,bDamage:102400000000000,rank:0,cost:102400000000000,id:10,clone:false,speed:11},
-  {active:false,x:700,y:200,dx:-.707,dy:.707,color:"#FFD700",radius:65,bDamage:2048000000000000,rank:0,cost:2048000000000000,id:11,clone:false,speed:12}
+  {active:false,x:200,y:200,dx:.707,dy:.707,color:"#5555ff",radius:10,bDamage:10,level:0,cost:10,id:0,clone:false,speed:1}, 
+  {active:false,x:300,y:300,dx:.707,dy:-.707,color:"#00ff00",radius:15,bDamage:200,level:0,cost:200,id:1,clone:false,speed:2}, 
+  {active:false,x:100,y:100,dx:-.707,dy:.707,color:"#ff0000",radius:20,bDamage:4000,level:0,cost:4000,id:2,clone:false,speed:3}, 
+  {active:false,x:400,y:400,dx:-.707,dy:-.707,color:"#ffff00",radius:25,bDamage:80000,level:0,cost:80000,id:3,clone:false,speed:4}, 
+  {active:false,x:900,y:300,dx:-.707,dy:.707,color:"#FFA500",radius:30,bDamage:1600000,level:0,cost:1600000,id:4,clone:false,speed:5}, 
+  {active:false,x:1000,y:200,dx:-.707,dy:-.707,color:"#800080",radius:35,bDamage:32000000,level:0,cost:32000000,id:5,clone:false,speed:6}, 
+  {active:false,x:1200,y:300,dx:.707,dy:.707,color:"#00C7D1",radius:40,bDamage:640000000,level:0,cost:640000000,id:6,clone:false,speed:7}, 
+  {active:false,x:1100,y:400,dx:-.707,dy:-.707,color:"#EE33A1",radius:45,bDamage:12800000000,level:0,cost:12800000000,id:7,clone:false,speed:8}, 
+  {active:false,x:300,y:500,dx:.707,dy:-.707,color:"#2ED371",radius:50,bDamage:256000000000,level:0,cost:256000000000,id:8,clone:false,speed:9}, 
+  {active:false,x:600,y:200,dx:-.707,dy:.707,color:"#800000",radius:55,bDamage:5120000000000,level:0,cost:5120000000000,id:9,clone:false,speed:10},
+  {active:false,x:500,y:200,dx:-.707,dy:.707,color:"#000000",radius:60,bDamage:102400000000000,level:0,cost:102400000000000,id:10,clone:false,speed:11},
+  {active:false,x:700,y:200,dx:-.707,dy:.707,color:"#FFD700",radius:65,bDamage:2048000000000000,level:0,cost:2048000000000000,id:11,clone:false,speed:12}
   
 ]; 
 var clickBalls = [ 
@@ -29,7 +29,7 @@ var clickBalls = [
   {active:false,x:700,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:103,clone:false,speed:4}, 
   {active:false,x:100,y:200,dx:-.707,dy:.707,color:"#666666",radius:25,bDamage:10,rank:1,cost:10,id:104,clone:false,speed:4}
 ];
-var specialBalls = [ 
+var special = [ 
   {active:false,x:700,y:200,dx:.707,dy:.707,color:"#e25822",radius:25,bDamage:500000000000000000000,rank:0,cost:100000000000000000000,id:0,clone:false,speed:6}, 
   {active:false,x:800,y:300,dx:.707,dy:.707,color:"#FFC21B",radius:30,bDamage:3000000000000000000000000,rank:0,cost:1000000000000000000000000,id:1,clone:false,speed:7}
 ]
@@ -572,19 +572,19 @@ function prestige(){
       click.bDamage = 10; 
       value = 10 * Math.pow(10,pUpgrades[8]); 
       balls = [ 
-        {active:false,x:200,y:200,dx:.707,dy:.707,color:"#5555ff",radius:5,bDamage:10,rank:0,cost:10,id:0,clone:false,speed:1}, 
-        {active:false,x:300,y:300,dx:.707,dy:-.707,color:"#00ff00",radius:10,bDamage:200,rank:0,cost:200,id:1,clone:false,speed:2}, 
-        {active:false,x:100,y:100,dx:-.707,dy:.707,color:"#ff0000",radius:15,bDamage:4000,rank:0,cost:4000,id:2,clone:false,speed:3}, 
-        {active:false,x:400,y:400,dx:-.707,dy:-.707,color:"#ffff00",radius:20,bDamage:80000,rank:0,cost:80000,id:3,clone:false,speed:4}, 
-        {active:false,x:900,y:300,dx:-.707,dy:.707,color:"#FFA500",radius:25,bDamage:1600000,rank:0,cost:1600000,id:4,clone:false,speed:5}, 
-        {active:false,x:1000,y:200,dx:-.707,dy:-.707,color:"#800080",radius:30,bDamage:32000000,rank:0,cost:320000000,id:5,clone:false,speed:6}, 
-        {active:false,x:1200,y:300,dx:.707,dy:.707,color:"#00C7D1",radius:35,bDamage:640000000,rank:0,cost:640000000,id:6,clone:false,speed:7}, 
-        {active:false,x:1100,y:400,dx:-.707,dy:-.707,color:"#EE33A1",radius:40,bDamage:1280000000,rank:0,cost:1280000000,id:7,clone:false,speed:8}, 
-        {active:false,x:300,y:500,dx:.707,dy:-.707,color:"#2ED371",radius:45,bDamage:25600000000,rank:0,cost:25600000000,id:8,clone:false,speed:9}, 
-        {active:false,x:600,y:200,dx:-.707,dy:.707,color:"#800000",radius:50,bDamage:512000000000,rank:0,cost:512000000000,id:9,clone:false,speed:10},
-        {active:false,x:500,y:200,dx:-.707,dy:.707,color:"#000000",radius:60,bDamage:102400000000000,rank:0,cost:102400000000000,id:10,clone:false,speed:11},
-        {active:false,x:700,y:200,dx:-.707,dy:.707,color:"#FFD700",radius:65,bDamage:2048000000000000,rank:0,cost:2048000000000000,id:11,clone:false,speed:12}
-      ]; 
+        {active:false,x:200,y:200,dx:.707,dy:.707,color:"#5555ff",radius:5,bDamage:10,level:0,cost:10,id:0,clone:false,speed:1}, 
+        {active:false,x:300,y:300,dx:.707,dy:-.707,color:"#00ff00",radius:10,bDamage:200,level:0,cost:200,id:1,clone:false,speed:2}, 
+        {active:false,x:100,y:100,dx:-.707,dy:.707,color:"#ff0000",radius:15,bDamage:4000,level:0,cost:4000,id:2,clone:false,speed:3}, 
+        {active:false,x:400,y:400,dx:-.707,dy:-.707,color:"#ffff00",radius:20,bDamage:80000,level:0,cost:80000,id:3,clone:false,speed:4}, 
+        {active:false,x:900,y:300,dx:-.707,dy:.707,color:"#FFA500",radius:25,bDamage:1600000,level:0,cost:1600000,id:4,clone:false,speed:5}, 
+        {active:false,x:1000,y:200,dx:-.707,dy:-.707,color:"#800080",radius:30,bDamage:32000000,level:0,cost:320000000,id:5,clone:false,speed:6}, 
+        {active:false,x:1200,y:300,dx:.707,dy:.707,color:"#00C7D1",radius:35,bDamage:640000000,level:0,cost:640000000,id:6,clone:false,speed:7}, 
+        {active:false,x:1100,y:400,dx:-.707,dy:-.707,color:"#EE33A1",radius:40,bDamage:1280000000,level:0,cost:1280000000,id:7,clone:false,speed:8}, 
+        {active:false,x:300,y:500,dx:.707,dy:-.707,color:"#2ED371",radius:45,bDamage:25600000000,level:0,cost:25600000000,id:8,clone:false,speed:9}, 
+        {active:false,x:600,y:200,dx:-.707,dy:.707,color:"#800000",radius:50,bDamage:512000000000,level:0,cost:512000000000,id:9,clone:false,speed:10},
+        {active:false,x:500,y:200,dx:-.707,dy:.707,color:"#000000",radius:60,bDamage:102400000000000,level:0,cost:102400000000000,id:10,clone:false,speed:11},
+        {active:false,x:700,y:200,dx:-.707,dy:.707,color:"#FFD700",radius:65,bDamage:2048000000000000,level:0,cost:2048000000000000,id:11,clone:false,speed:12}
+      ];
       if(notationScientfic){ 
           for(var p = 0; p < startingBalls; p++){ 
               document.getElementById(p+"T").innerHTML = "Buy"; 
